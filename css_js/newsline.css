@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    cursor: default;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+@font-face {
+    font-family: "Mulish-VariableFont";
+    src: url("../font/Mulish-VariableFont_wght.ttf");
+}
+body {
+    font-family: "Mulish-VariableFont";
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.container_news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    width: 100vw;
+    height: auto;
+}
+
+.box_news {
+    display: flex;
+    width: 1200px;
+    height: 400px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-top: 5%;
+    margin-bottom: 1%;
+    border-radius: 25px;
+    transition: 0.5s;
+    color: black;
+}
+.box_news:hover {
+    transform: scale(1.02);
+}
+.news_image {
+    display: flex;
+    width: 455px;
+    height:400px;
+    background-size: cover;
+    background-position: center;
+}
+.news_text {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 350px;
+    margin-left: 20px;
+}
+#title {
+    font-weight: 700;
+    font-size: 25px;
+}
+#annotation {
+    margin-top: 50px;
+    font-size: 20px;
+}
+#date {
+    margin-top: 50px;
+    color: rgb(0, 0, 0, 0.5);
+}
